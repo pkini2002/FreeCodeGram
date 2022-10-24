@@ -7,7 +7,12 @@
             <img src="{{URL::asset('/svg/insta-pic.png')}}" alt="img" style="height:150px;">
         </div>
         <div class="col-9 pt-5">
-            <div><h1>{{ $user->username }}</h1></div>
+            <div class="d-flex justify-content-between">
+            <h1>
+                {{ $user->username }}
+            </h1>
+            <a href="#">Add New Post</a>
+            </div>
             <div class="d-flex">
                 <div style="padding-right:25px;"><strong>153 </strong>posts</div>
                 <div style="padding-right:25px;"><strong>23k </strong>followers</div>
