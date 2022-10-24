@@ -9,9 +9,10 @@ Alternative installation is possible without local dependencies relying on [Dock
 ### Software and tools used for this project
 
 ```
-XAMPP Server                -     By Apache Friends Version 3.3.0
 Composer Version            -     2.4.2
 PHP Version                 -     8.1.5
+Laravel Version             -     9.36.4
+Bootstrap Version           -     5.2
 Database                    -     Sqlite db
 Code Editor                 -     VSCode
 ```
