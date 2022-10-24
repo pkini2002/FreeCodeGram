@@ -39,9 +39,9 @@ Install all the dependencies using composer
    composer install
    ```
 
-Copy `.env.example` file to `.env` on the root folder. You can type copy `.env.example .env` if using command prompt Windows or `cp .env.example .env` if using terminal, Ubuntu
+- Copy `.env.example` file to `.env` on the root folder. You can type copy `.env.example .env` if using command prompt Windows or `cp .env.example .env` if using terminal, Ubuntu
 
-Open your .env file and change the database name `(DB_DATABASE)` to whatever you have, username `(DB_USERNAME)` and password `(DB_PASSWORD)` field correspond to your configuration.
+- Open your .env file and change the database name `(DB_DATABASE)` to whatever you have, username `(DB_USERNAME)` and password `(DB_PASSWORD)` field correspond to your configuration.
 
 
 ```bash
@@ -58,4 +58,4 @@ It will prompt you to create a db.sqlite3 database click create and apply migrat
    php artisan serve
 ```
 
-A development server `http://127.0.0.1:8000/` will be started. Run the server in any browser and ensure proper internet connection
+- A development server `http://127.0.0.1:8000/` will be started. Run the server in any browser and ensure proper internet connection
