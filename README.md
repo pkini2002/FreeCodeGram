@@ -12,11 +12,10 @@ Alternative installation is possible without local dependencies relying on [Dock
 Composer Version            -     2.4.2
 PHP Version                 -     8.1.5
 Laravel Version             -     9.36.4
-Bootstrap Version           -     5.2
+Bootstrap Version[Frontend] -     5.2
 Database                    -     Sqlite db
 Code Editor                 -     VSCode
 ```
-
 
 **Install Visual Studio Code :** 
 
