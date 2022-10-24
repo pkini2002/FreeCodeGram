@@ -26,14 +26,14 @@ https://code.visualstudio.com/download
 
 https://www.apachefriends.org/download.html 
 
-Clone the repository and paste it in htdocs folder of your XAMPP
+**Clone the repository and paste it in htdocs folder of your XAMPP**
 
  ```git
    git clone https://github.com/pkini2002/FreeCodeGram.git
    cd FreeCodeGram
    ```
 
-Install all the dependencies using composer
+**Install all the dependencies using composer**
 
  ```bash
    composer install
@@ -50,6 +50,14 @@ Install all the dependencies using composer
 
 ```bash
    php artisan migrate
+```
+
+**Configure your package.json files using these commands**
+
+```bash
+    npm install
+    npm run dev
+    npm run build
 ```
 
 It will prompt you to create a db.sqlite3 database click create and apply migrations
