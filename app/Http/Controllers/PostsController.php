@@ -27,7 +27,7 @@ class PostsController extends Controller
 
         $imagePath=request('image')->store('uploads','public');
 
-        $image = Image::make(public_path("storage/{$imagePath}"))->fit(1200, 1200);
+        $image = Image::make(public_path("storage/{$imagePath}"))->fit(300, 300);
         $image->save();
 
         auth()->user()->posts()->create([
@@ -40,5 +40,9 @@ class PostsController extends Controller
 
         // \App\Models\Post::create($data);
         return redirect('/profile/'.auth()->user()->id);
+    }
+
+    public function show(\App\Models\Post $post){
+          return view('posts.show',compact('post'));
     }
 }
