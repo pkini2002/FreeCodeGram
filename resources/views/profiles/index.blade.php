@@ -4,17 +4,21 @@
 <div class="container">
     <div class="row">
         <div class="col-3 p-5">
-            <img src="{{URL::asset('/svg/insta-pic.png')}}" alt="img" style="height:150px;">
+            <img src="{{ $user->profile->profileImage() }}" alt="img" style="height:150px;" class="rounded-circle">
         </div>
         <div class="col-9 pt-5">
             <div class="d-flex justify-content-between">
             <h1>
                 {{ $user->username }}
             </h1>
-            <a href="/p/create">Add New Post</a>
 
+            @can('update',$user->profile)
+            <a href="/p/create">Add New Post</a>
+            @endcan
+
+            @can('update',$user->profile)
             <a href="/profile/{{ $user->id }}/edit">Edit Profile</a>
-        
+            @endcan
 
             </div>
             <div class="d-flex">
