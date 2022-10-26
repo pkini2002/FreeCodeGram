@@ -8,9 +8,12 @@
         </div>
         <div class="col-9 pt-5">
             <div class="d-flex justify-content-between">
-            <h1>
+            <div class="d-flex" style="padding-bottom:20px;">
+            <h1 style="padding-right:50px;">
                 {{ $user->username }}
             </h1>
+            <follow-button></follow-button>
+            </div>
 
             @can('update',$user->profile)
             <a href="/p/create">Add New Post</a>
