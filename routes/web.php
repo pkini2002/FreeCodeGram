@@ -29,6 +29,10 @@ Route::get('/p/{post}', [App\Http\Controllers\PostsController::class, 'show'])->
 
 Route::get('/profile/{user}', [App\Http\Controllers\ProfilesController::class, 'index'])->name('profile.show');
 
+Route::post('follow/{user}',function(){
+    return ['success'];
+});
+
 
 Route::get('/profile/{user}/edit', [App\Http\Controllers\ProfilesController::class, 'edit'])->name('p.edit');
 
