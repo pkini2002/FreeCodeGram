@@ -63,6 +63,10 @@ https://www.apachefriends.org/download.html
 It will prompt you to create a db.sqlite3 database click create and apply migrations
 
 ```bash
+   php artisan migrate
+```
+
+```bash
    php artisan serve
 ```
 
